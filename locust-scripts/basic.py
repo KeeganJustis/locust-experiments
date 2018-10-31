@@ -7,9 +7,6 @@ class UserTasks(TaskSet):
     def index(self):
         self.client.get("/")
 
-    @task
-    def stats(self):
-        self.client.get("/stats/requests")
 
 
 class WebsiteUser(HttpLocust):
